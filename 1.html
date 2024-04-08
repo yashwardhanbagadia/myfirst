@@ -1,0 +1,50 @@
+<h1>Book Appointment</h1>
+
+   <label>Patient Details</label>
+  <hr>
+  <form id="sform" onsubmit="handleFormSubmit(event)">
+   
+
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="nam">
+    <br><br>
+        <label for="email">Email:</label>
+
+    <input type="email" id="email" name="emai">
+        <br><br>
+        <label for="phone">Phone Number:</label>
+
+    <input type="tel" id="phone" name="phon">
+        <br><br>
+        <label for="date" >Date:</label>
+
+    <input type="date" id="date" name="dat">
+        <br><br>
+        <label for="time">Time:</label>
+
+    <input type="time" id="time" name="tim">
+        <br><br>
+    <label> <button type="submit">Submit</button></label>
+   <label> <button type="reset">Reset</button></label>
+    
+  </form>
+  
+</body>
+
+<script>
+  function handleFormSubmit(event)
+{
+  event.preventDefault();
+  console.log(event.target.nam.value);
+  console.log(event.target.emai.value);
+  console.log(event.target.phon.value);
+  console.log(event.target.dat.value);
+  console.log(event.target.tim.value);
+
+}
+</script>
+
+
+
+</html>
